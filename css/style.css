@@ -15,7 +15,7 @@ header {
     margin: 0px;
     padding: 0px;
     background-color: white;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #777777;
 }
 
 .container {
@@ -25,6 +25,28 @@ header {
     padding-left: 20px;
     background-color: white;
 }
+
+.pageRule {
+    width:100%;
+    border-bottom: 1px solid #777777;
+}
+
+footer {
+    position: relative;
+    clear: both;
+    width: 100%;
+    margin-top: -40px;
+    padding: 30px 0px 4px 0px;
+    margin: 0px;
+    background-color: #666;
+    border-top: 10px solid #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+}
+
+
 /** Navigation Bar Styles **/
 
 .myNav {
@@ -40,19 +62,54 @@ header {
     background-color: #4aaaa5;
     color: white;
     padding: 20px; 
+    margin: 0px;
 }
 
 .navbar-nav {
     float: right;
-    text-align: right;
-     
+    text-align: right; 
 }
+
 
 .center {
     width: 960px;
     margin: 0 auto;
     padding: 0px;
 }
+
+
+@media (min-width: 768px) {
+    .navbar-nav {
+        float: left;
+        text-align: left;
+    }
+
+    .navbar-toggler {
+        float: none;
+    }
+
+    .center {
+        width: none;
+        float:none;
+    }
+}
+
+@media (min-width: 576px) {
+    .navbar-nav {
+        float: none;
+        text-align: none;
+    }
+
+    .navbar-toggler {
+        float: none;
+    }
+
+    .center {
+        width: none;
+        float:none;
+    }
+}
+
 
 /** Text Styles **/
 
@@ -66,4 +123,48 @@ h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 32px;
     color: #4aaaa5;
+}
+
+.firstParagraph {
+    margin: 18px 0px 0px 0px;
+}
+
+
+
+/** Image Styles **/
+
+.bioPic {
+    margin: 20px 14px 0px 0px;
+    float: left;
+}
+
+.portImage {
+    margin: 40px 40px 0px 0px;
+    float: left;
+}
+
+
+/** Page Elements **/
+
+hr {
+    width: 100%;
+    height: 10px;
+    color: #777777;
+    size: 10px;
+    
+}
+
+/** Form Fields **/
+
+input[type=submit] {
+    width: 120px;
+    height: 40px;
+    background-color:  #4aaaa5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
 }
